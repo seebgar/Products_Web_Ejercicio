@@ -1,0 +1,14 @@
+{
+  "name": "Products",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0"
+  }
+}

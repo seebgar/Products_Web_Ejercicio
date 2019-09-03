@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    
+  div.container
+    div.content
+        h1= Products
+        p Products - Sebastian Garcia 201630047
+        ul
+        for item in data
+            p
+            a(class='btn btn-primary' data-toggle='collapse' href="#collapseExample"+item.name role="button" aria-expanded="false" aria-controls="collapseExample")
+                =item.name
+            div(class="collapse" id="collapseExample"+item.name)
+                for sub in item.products
+                    span
+                        div(class="card" style="width: 18rem;")
+                            img(src=""+sub.image class="card-img-top" alt=""+sub.name)
+                            div(class="card-body")
+                                h5(class="card-title")
+                                    =sub.name
+                                p(class="card-text")
+                                    =sub.description
+                                a(href="#" class="btn btn-primary")
+                                    =sub.price
+
+    
+        
