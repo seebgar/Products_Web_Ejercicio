@@ -80,7 +80,7 @@ html_basura = async renderizar => {
             <div class="card-body">
             <h5 class="card-title"> ${i.name}</h5>
             <p class="card-text">${i.description}</p>
-            <a href="#" class="btn btn-primary">${i.price}</a>
+            <a href="#" class="btn btn-primary">${i.price} - Add to car</a>
           </div>
         </div>`
       })
