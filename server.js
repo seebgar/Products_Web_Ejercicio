@@ -8,7 +8,7 @@ const products_route = require("./routes/product");
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use("*", products_route);
+app.use("/", products_route);
 
 app.listen(PORT, _ => console.log(`Listening on ${PORT}`))
 
